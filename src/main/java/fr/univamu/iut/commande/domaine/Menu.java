@@ -70,4 +70,8 @@ public class Menu {
                 .add("date",this.date)
                 .build();
     }
+
+    public void ajouterPlat(JsonObject plat){
+        this.plats.add(plat);
+    }
 }
