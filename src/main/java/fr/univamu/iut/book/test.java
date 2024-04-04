@@ -1,14 +1,14 @@
-package fr.univamu.iut.apimenus;
+package fr.univamu.iut.book;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 
-@Path("/hello-world")
-public class HelloResource {
+@Path("/suuu")
+public class test {
     @GET
     @Produces("text/plain")
     public String hello() {
-        return "Hello, World!";
+        return "haaaauuugh";
     }
 }

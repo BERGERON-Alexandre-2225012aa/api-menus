@@ -1,9 +1,9 @@
-package fr.univamu.iut.apimenus;
+package fr.univamu.iut.book;
 
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;
 
 @ApplicationPath("/api")
-public class HelloApplication extends Application {
+public class BookApplication extends Application {
 
 }
