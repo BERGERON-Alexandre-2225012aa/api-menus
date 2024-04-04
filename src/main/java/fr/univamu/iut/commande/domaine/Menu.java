@@ -1,6 +1,8 @@
 package fr.univamu.iut.commande.domaine;
 
+import jakarta.json.Json;
 import jakarta.json.JsonArray;
+import jakarta.json.JsonObject;
 
 public class Menu {
     private String nom;
@@ -58,5 +60,14 @@ public class Menu {
 
     public void setPrix(String prix) {
         this.prix = prix;
+    }
+    public JsonObject getJSON(){
+        return Json.createObjectBuilder()
+                .add("nomMenu", this.nom)
+                .add("contenu", this.plats)
+                .add("createur",this.createur)
+                .add("prix",this.prix)
+                .add("date",this.date)
+                .build();
     }
 }
